@@ -136,7 +136,7 @@ header ul li a:hover {
     border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
-    min-height: 400px; /* Ajuste para aumentar a altura mínima dos projetos */
+    min-height: 800px; /* Ajuste para aumentar a altura mínima dos projetos */
 }
 
 .project-card h2 {
