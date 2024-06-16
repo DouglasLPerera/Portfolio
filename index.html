@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </header>
+
+    <div class="profile">
+        <div class="profile-info">
+            <img src="css/Foto perfil.jpeg" alt="Sua foto" class="profile-img">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/douglaslperera" target="_blank"><img src="css/Icone linkedin.png" alt="LinkedIn"></a>
+                <a href="mailto:douglasluisperera@gmail.com"><img src="css/icone gmail.png" alt="Gmail"></a>
+                <a href="https://wa.me/51982796125" target="_blank"><img src="css/icone whats.png" alt="WhatsApp"></a>
+                <a href="https://douglasluisperera.blogspot.com/" target="_blank"><img src="css/icone blogger.png" alt="blogger"></a>
+                <a href="https://drive.google.com/file/d/1HoYxmsxtFqpMWxoWCnMu-AATydtMvp8B/view?usp=drive_link" target="_blank"><img src="css/icone resume.png" alt="CV"></a>
+            </div>
+        </div>
+        <div class="subtitle">
+            <h1>Douglas Perera</h1>
+            <p>Analista de dados | SQL | Excel</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="home"></div>
+
+        <section id="portfolio" class="section" style="padding-top: 210px;">
+            <h1 class="portfolio-title">Portfolio</h1>
+
+            <!-- Segmentação de dados -->
+            <div class="filter-container">
+                <label for="keywordFilter">Filtrar por palavras-chave:</label>
+                <select id="keywordFilter" onchange="filterProjects()">
+                    <option value="all">Todas</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Data Analysis">Análise de Dados</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Excel">Excel</option>
+                </select>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card" data-keywords="Marketing Data Analysis">
+                    <h2>Projeto 1</h2>
+                    <p>Subtitulo 1</p>
+                    <embed src="projetos/case_marketing.pdf" type="application/pdf" />
+                    <p class="keywords">Marketing, Data Analysis</p>
+                </div>
+
+                <div class="project-card" data-keywords="SQL Data Analysis">
+                    <h2>Projeto 2</h2>
+                    <p>Subtitulo 2</p>
+                    <embed src="projetos/case_sql.pdf" type="application/pdf" />
+                    <p class="keywords">SQL, Data Analysis</p>
+                </div>
+
+                <div class="project-card" data-keywords="Excel Data Analysis">
+                    <h2>Projeto 3</h2>
+                    <p>Subtitulo 3</p>
+                    <embed src="projetos/case_excel.pdf" type="application/pdf" />
+                    <p class="keywords">Excel, Data Analysis</p>
+                </div>
+
+                <div class="project-card" data-keywords="Marketing SQL">
+                    <h2>Projeto 4</h2>
+                    <p>Subtitulo 4</p>
+                    <embed src="projetos/case_marketing_sql.pdf" type="application/pdf" />
+                    <p class="keywords">Marketing, SQL</p>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="Js/script.js"></script>
+</body>
+</html>
