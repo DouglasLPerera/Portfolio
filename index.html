@@ -16,13 +16,12 @@
 
     <div class="profile">
         <div class="profile-info">
-            <img src="css/Foto perfil.jpeg" alt="Sua foto" class="profile-img">
+            <img src="css/profile photo.jpg" alt="Sua foto" class="profile-img">
             <div class="icons">
                 <a href="https://www.linkedin.com/in/douglaslperera" target="_blank"><img src="css/Icone linkedin.png" alt="LinkedIn"></a>
                 <a href="mailto:douglasluisperera@gmail.com"><img src="css/icone gmail.png" alt="Gmail"></a>
                 <a href="https://wa.me/51982796125" target="_blank"><img src="css/icone whats.png" alt="WhatsApp"></a>
-                <a href="https://douglasluisperera.blogspot.com/" target="_blank"><img src="css/icone blogger.png" alt="blogger"></a>
-                <a href="https://drive.google.com/file/d/1HoYxmsxtFqpMWxoWCnMu-AATydtMvp8B/view?usp=drive_link" target="_blank"><img src="css/icone resume.png" alt="CV"></a>
+                <a href="https://drive.google.com/file/d/1hUA883VedighKNfz6sm8FKsC4DzcDf59/view?usp=sharing" target="_blank"><img src="css/icone resume.png" alt="CV"></a>
             </div>
         </div>
         <div class="subtitle">
@@ -34,7 +33,7 @@
     <div class="content">
         <div id="home"></div>
 
-        <section id="portfolio" class="section" style="padding-top: 210px;">
+        <section id="portfolio" class="section" style="padding-top: 50px;">
             <h1 class="portfolio-title">Portfolio</h1>
 
             <!-- Segmentação de dados -->
@@ -46,45 +45,69 @@
                     <option value="SQL">SQL</option>
                     <option value="Excel">Excel</option>
                     <option value="Data Mundo">Data Mundo</option>
+                    <option value="Hashtag">Hashtag</option>
+                    <option value="Vendas">Vendas</option>
+                    <option value="RH">RH</option>
+                    <option value="Produção">Produção</option>
+                    <option value="Financeiro">Financeiro</option>
                 </select>
             </div>
 
             <div class="project-grid">
                 <div class="project-card" data-keywords="Marketing Data Mundo SQL">
                     <h2>Case Tech Trends</h2>
-                    <p>Projeto desenvolvido juntamente com a Data mundo</p>
-                    <embed src="css/TechTrends.jpg" type="application/pdf" />
+                    <p>Projeto desenvolvido juntamente com a Data Mundo</p>
+                    <div class="embed-container">
+                        <iframe src="css/Pdfs/Trafego Pago, Data Mundo.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    </div>
                     <p class="keywords">Marketing, Data Mundo, SQL</p>
                 </div>
 
-                <div class="project-card" data-keywords="SQL Data Analysis">
-                    <h2>Projeto 2</h2>
-                    <p>Subtitulo 2</p>
-                    <embed src="projetos/case_sql.pdf" type="application/pdf" />
-                    <p class="keywords">SQL, Data Analysis</p>
+                <div class="project-card" data-keywords="Excel Hashtag Financeiro">
+                    <h2>Intensivão Power BI da Hashtag - Financeiro</h2>
+                    <p>Dashboard Aula Financeiro</p>
+                    <div class="embed-container">
+                        <iframe src="css/Pdfs/Financeiro, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    </div>
+                    <p class="keywords">Excel, Hashtag, Financeiro</p>
                 </div>
 
-                <div class="project-card" data-keywords="Excel Data Analysis">
-                    <h2>Projeto 3</h2>
-                    <p>Subtitulo 3</p>
-                    <embed src="projetos/case_excel.pdf" type="application/pdf" />
-                    <p class="keywords">Excel, Data Analysis</p>
+                <div class="project-card" data-keywords="Excel Hashtag Produção">
+                    <h2>Intensivão Power BI da Hashtag - Produção</h2>
+                    <p>Dashboard Aula Produção</p>
+                    <div class="embed-container">
+                        <iframe src="css/Pdfs/Produção, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    </div>
+                    <p class="keywords">Excel, Hashtag, Produção</p>
                 </div>
 
-                <div class="project-card" data-keywords="Marketing SQL">
-                    <h2>Projeto 4</h2>
-                    <p>Subtitulo 4</p>
-                    <embed src="projetos/case_marketing_sql.pdf" type="application/pdf" />
-                    <p class="keywords">Marketing, SQL</p>
+                <div class="project-card" data-keywords="Excel Hashtag RH">
+                    <h2>Intensivão Power BI da Hashtag - RH</h2>
+                    <p>Dashboard Aula RH</p>
+                    <div class="embed-container">
+                        <iframe src="css/Pdfs/RH, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    </div>
+                    <p class="keywords">Excel, Hashtag, RH</p>
                 </div>
-                
+
+                <div class="project-card" data-keywords="Excel Hashtag Vendas">
+                    <h2>Intensivão Power BI da Hashtag - Vendas</h2>
+                    <p>Dashboard Aula Vendas</p>
+                    <div class="embed-container">
+                        <iframe src="css/Pdfs/Vendas, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    </div>
+                    <p class="keywords">Excel, Hashtag, Vendas</p>
+                </div>
             </div>
         </section>
     </div>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="pdfModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+            <canvas id="pdfCanvas"></canvas>
+        </div>
+    </div>
 
-
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script src="Js/script.js"></script>
 </body>
 </html>
