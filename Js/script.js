@@ -59,34 +59,35 @@ window.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
-
     function scrollToTarget(targetId) {
         if (targetId === 'portfolio') {
             window.scrollTo({
-                top: 820, // Defina a quantidade específica de pixels para descer
+                top: document.getElementById('portfolio').offsetTop - 50,
                 behavior: 'smooth'
             });
-            menuLinks.forEach(link => link.classList.remove('active'));
-            document.querySelector(`header ul li a[href="#portfolio"]`).classList.add('active');
         } else {
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
+                let offset = 50;
+                if (targetId === 'home') {
+                    offset = 90; // Ajuste para a seção home
+                }
                 window.scrollTo({
-                    top: targetSection.offsetTop - 80, // Ajuste para a altura da barra de menu
+                    top: targetSection.offsetTop - offset,
                     behavior: 'smooth'
                 });
-                menuLinks.forEach(link => link.classList.remove('active'));
-                document.querySelector(`header ul li a[href="#${targetId}"]`).classList.add('active');
             } else if (targetId === 'home') {
                 window.scrollTo({
-                    top: 0,
+                    top: 90,
                     behavior: 'smooth'
                 });
-                menuLinks.forEach(link => link.classList.remove('active'));
-                document.querySelector('header ul li a[href="#home"]').classList.add('active');
             }
         }
     }
+    
+    
+     
+    
 
     // Expandir PDF no modal
     const pdfEmbeds = document.querySelectorAll('.pdf-embed');
