@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <ul>
-
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#dashboards">Dashboards</a></li>
         </ul>
     </header>
 
@@ -28,28 +26,62 @@
         </div>
         <div class="subtitle">
             <h1>Douglas Perera</h1>
-            <p>Analista de dados | SQL | Excel</p>
+            <p>Analista de dados | SQL | Excel | Power</p>
         </div>
     </div>
 
     <div class="content">
         <div id="home"></div>
-            <!-- Seção Sobre Mim -->
-            <section id="about" class="section" style="padding-top: 10px;">
-                <h1>Sobre Mim</h1>
-                <p>Com 12 anos de experiência na área de arquitetura, descobri minha verdadeira vocação pela análise de dados. Esta transição não foi apenas uma mudança de carreira, mas uma evolução natural das minhas habilidades e interesses. Durante minha trajetória na arquitetura, desenvolvi um olhar apurado para detalhes e uma habilidade única para resolver problemas complexos. Foi esta combinação que me levou a perceber o potencial transformador dos dados.
-                    
-                    Hoje, sou especialista em transformar números em insights valiosos que impulsionam decisões estratégicas. Minha abordagem distintiva combina criatividade e análise, permitindo-me criar visualizações claras e envolventes que comunicam informações complexas de maneira acessível. Tenho uma paixão por explorar novos horizontes na interseção da tecnologia e eficiência empresarial, buscando continuamente novas formas de aplicar técnicas de análise de dados para otimizar processos e gerar valor para as organizações.
-                    
-                    Esta jornada é tanto profissional quanto pessoal, refletindo meu compromisso com o aprendizado contínuo e a inovação. Estou determinado a fazer um impacto significativo no campo da análise de dados, utilizando minha expertise para ajudar empresas a navegar em um ambiente cada vez mais orientado por dados. Acredito que, ao unir minhas habilidades analíticas com minha criatividade, posso contribuir de maneira única para o sucesso de qualquer equipe ou projeto.
-                    
-                    Estou ansioso para continuar esta jornada, colaborando com profissionais e empresas que compartilham minha paixão por dados e inovação, e estou pronto para enfrentar novos desafios que possam surgir neste campo dinâmico e em constante evolução.</p>
-            </section>
+        
+        <!-- Seção Sobre Mim -->
+        <section id="about" class="section" style="padding-top: 10px;">
+            <h1>Sobre Mim</h1>
+            <p>Com 12 anos de experiência na área de arquitetura, descobri minha verdadeira vocação pela análise de dados. Esta transição não foi apenas uma mudança de carreira, mas uma evolução natural das minhas habilidades e interesses. Durante minha trajetória na arquitetura, desenvolvi um olhar apurado para detalhes e uma habilidade única para resolver problemas complexos. Foi esta combinação que me levou a perceber o potencial transformador dos dados.
+                
+                Hoje, sou especialista em transformar números em insights valiosos que impulsionam decisões estratégicas. Minha abordagem distintiva combina criatividade e análise, permitindo-me criar visualizações claras e envolventes que comunicam informações complexas de maneira acessível. Tenho uma paixão por explorar novos horizontes na interseção da tecnologia e eficiência empresarial, buscando continuamente novas formas de aplicar técnicas de análise de dados para otimizar processos e gerar valor para as organizações.
+                
+                Esta jornada é tanto profissional quanto pessoal, refletindo meu compromisso com o aprendizado contínuo e a inovação. Estou determinado a fazer um impacto significativo no campo da análise de dados, utilizando minha expertise para ajudar empresas a navegar em um ambiente cada vez mais orientado por dados. Acredito que, ao unir minhas habilidades analíticas com minha criatividade, posso contribuir de maneira única para o sucesso de qualquer equipe ou projeto.
+                
+                Estou ansioso para continuar esta jornada, colaborando com profissionais e empresas que compartilham minha paixão por dados e inovação, e estou pronto para enfrentar novos desafios que possam surgir neste campo dinâmico e em constante evolução.</p>
+        </section>
 
-        <section id="portfolio" class="section" style="padding-top: 10px;">
-            <h1 class="portfolio-title">Portfolio</h1>
+        <!-- Seção Skills -->
+        <section id="skills" class="section" style="padding-top: 10px;">
+            <h1>Skills</h1>
+            <p> 
+                <h1>· Ferramentas de BI</h1>
+                <p> ◦ Power BI </p>
+                <p> ◦ Tableau </p> 
+                <p> ◦ Looker Studio</p>
+                
 
-            <!-- Segmentação de dados -->
+                <h1>· Análise de dados</h1>
+                <p>◦ SQL</p>
+                <p>◦ ETL (Pentaho, SSIS)</p>
+                <p>◦ Modelagem de dados</p>
+                        
+                <h1> · Desenvolvimento</h1>
+                <p>◦ Python</p>
+                <p>◦ HTML</p>    
+                <p>◦ css</p>    
+                <p>◦ Java Script</p>
+
+                <h1>· Metodologias</h1>
+                <p>◦ Scrum</p>
+                <p>◦ Kanban</p>
+                <p>◦ LGPD</p>
+
+                <h1>· Prototipação</h1>
+                <p>◦ Figma</p>
+
+                <h1>· Línguas</h1>
+                <p>◦ Inglês </p>
+            </p>
+        </section>
+
+        <!-- Seção Dashboards -->
+        <section id="dashboards" class="section">
+            <h1>Dashboards</h1>
             <div class="filter-container">
                 <label for="keywordFilter">Filtrar por palavras-chave:</label>
                 <select id="keywordFilter" onchange="filterProjects()">
@@ -63,24 +95,41 @@
                     <option value="RH">RH</option>
                     <option value="Produção">Produção</option>
                     <option value="Financeiro">Financeiro</option>
+                    <option value="Looker Studio">Looker Studio</option>
                 </select>
             </div>
-
+            
             <div class="project-grid">
-                <div class="project-card" data-keywords="Marketing Data Mundo SQL">
+                <div class="project-card" data-keywords="Marketing, Data Mundo, SQL">
                     <h2>Case Tech Trends</h2>
                     <p>Projeto desenvolvido juntamente com a Data Mundo</p>
-                    <div class="embed-container">
-                        <iframe src="css/Pdfs/Trafego Pago, Data Mundo.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    <div class="pdf-frame">
+                        <iframe src="css/Pdfs/Trafego Pago, Data Mundo.pdf" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                        <div class="text-view">
+                            <h4>Descrição do Projeto</h4>
+                            <p>Descrição detalhada do projeto Case Tech Trends.</p>
+                        </div>
+                        <div class="nav-arrows">
+                            <button onclick="toggleView(this)">◀</button>
+                            <button onclick="toggleView(this)">▶</button>
+                        </div>
                     </div>
                     <p class="keywords">Marketing, Data Mundo, SQL</p>
                 </div>
 
-                <div class="project-card" data-keywords="Excel Hashtag Financeiro">
+                <div class="project-card" data-keywords="Excel, Hashtag, Financeiro">
                     <h2>Intensivão Power BI da Hashtag - Financeiro</h2>
                     <p>Dashboard Aula Financeiro</p>
-                    <div class="embed-container">
-                        <iframe src="css/Pdfs/Financeiro, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    <div class="pdf-frame">
+                        <iframe src="css/Pdfs/Financeiro, Hashtag.pdf" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                        <div class="text-view">
+                            <h4>Descrição do Projeto</h4>
+                            <p>Descrição detalhada do projeto Intensivão Power BI da Hashtag - Financeiro.</p>
+                        </div>
+                        <div class="nav-arrows">
+                            <button onclick="toggleView(this)">◀</button>
+                            <button onclick="toggleView(this)">▶</button>
+                        </div>
                     </div>
                     <p class="keywords">Excel, Hashtag, Financeiro</p>
                 </div>
@@ -88,39 +137,140 @@
                 <div class="project-card" data-keywords="Excel Hashtag Produção">
                     <h2>Intensivão Power BI da Hashtag - Produção</h2>
                     <p>Dashboard Aula Produção</p>
-                    <div class="embed-container">
-                        <iframe src="css/Pdfs/Produção, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    <div class="pdf-frame">
+                        <iframe src="css/Pdfs/Produção, Hashtag.pdf" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                        <div class="text-view">
+                            <h4>Descrição do Projeto</h4>
+                            <p>Descrição detalhada do projeto Intensivão Power BI da Hashtag - Produção.</p>
+                        </div>
+                        <div class="nav-arrows">
+                            <button onclick="toggleView(this)">◀</button>
+                            <button onclick="toggleView(this)">▶</button>
+                        </div>
                     </div>
                     <p class="keywords">Excel, Hashtag, Produção</p>
                 </div>
 
-                <div class="project-card" data-keywords="Excel Hashtag RH">
+                <div class="project-card" data-keywords="Excel, Hashtag, RH">
                     <h2>Intensivão Power BI da Hashtag - RH</h2>
                     <p>Dashboard Aula RH</p>
-                    <div class="embed-container">
-                        <iframe src="css/Pdfs/RH, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    <div class="pdf-frame">
+                        <iframe src="css/Pdfs/RH, Hashtag.pdf" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                        <div class="text-view">
+                            <h4>Descrição do Projeto</h4>
+                            <p>Descrição detalhada do projeto Intensivão Power BI da Hashtag - RH.</p>
+                        </div>
+                        <div class="nav-arrows">
+                            <button onclick="toggleView(this)">◀</button>
+                            <button onclick="toggleView(this)">▶</button>
+                        </div>
                     </div>
                     <p class="keywords">Excel, Hashtag, RH</p>
                 </div>
 
-                <div class="project-card" data-keywords="Excel Hashtag Vendas">
+                <div class="project-card" data-keywords="Excel, Hashtag, Vendas">
                     <h2>Intensivão Power BI da Hashtag - Vendas</h2>
                     <p>Dashboard Aula Vendas</p>
-                    <div class="embed-container">
-                        <iframe src="css/Pdfs/Vendas, Hashtag.pdf" type="application/pdf" class="pdf-embed" data-page="1"></iframe>
+                    <div class="pdf-frame">
+                        <iframe src="css/Pdfs/Vendas, Hashtag.pdf" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                        <div class="text-view">
+                            <h4>Descrição do Projeto 5</h4>
+                            <p>Descrição detalhada do projeto Intensivão Power BI da Hashtag - Vendas.</p>
+                        </div>
+                        <div class="nav-arrows">
+                            <button onclick="toggleView(this)">◀</button>
+                            <button onclick="toggleView(this)">▶</button>
+                        </div>
                     </div>
                     <p class="keywords">Excel, Hashtag, Vendas</p>
                 </div>
+
+            <div class="project-card" data-keywords="Looker Studio">
+                <h2>EM BREVE</h2>
+                <p>Dashboard Looker Studio</p>
+                <div class="pdf-frame">
+                    <iframe src="" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                    <div class="text-view">
+                        <h4>Descrição do Projeto</h4>
+                        <p>Projeto desenvoldido no Looker Studio</p>
+                    </div>
+                    <div class="nav-arrows">
+                        <button onclick="toggleView(this)">◀</button>
+                        <button onclick="toggleView(this)">▶</button>
+                    </div>
+                </div>
+                <p class="keywords">Looker Studio</p>
             </div>
+
+            <div class="project-card" data-keywords="Looker Studio">
+                <h2>EM BREVE</h2>
+                <p>Dashboard Looker Studio</p>
+                <div class="pdf-frame">
+                    <iframe src="" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                    <div class="text-view">
+                        <h4>Descrição do Projeto</h4>
+                        <p>Projeto desenvoldido no Looker Studio</p>
+                    </div>
+                    <div class="nav-arrows">
+                        <button onclick="toggleView(this)">◀</button>
+                        <button onclick="toggleView(this)">▶</button>
+                    </div>
+                </div>
+                <p class="keywords">Looker Studio</p>
+            </div>
+
+            <div class="project-card" data-keywords="Excel">
+                <h2>EM BREVE</h2>
+                <p>Case Excel</p>
+                <div class="pdf-frame">
+                    <iframe src="" type="application/pdf" class="pdf-embed active" data-page="1"></iframe>
+                    <div class="text-view">
+                        <h4>Descrição do Projeto</h4>
+                        <p>Case desenvoldido em Excel</p>
+                    </div>
+                    <div class="nav-arrows">
+                        <button onclick="toggleView(this)">◀</button>
+                        <button onclick="toggleView(this)">▶</button>
+                    </div>
+                </div>
+                <p class="keywords">Excel</p>
+            </div>
+
+        </div>
         </section>
     </div>
+        </section>
     <div id="pdfModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
-            <canvas id="pdfCanvas"></canvas>
-        </div>
+        <canvas id="pdfCanvas"></canvas>
     </div>
 
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script src="Js/script.js"></script>
+    <div id="pdfModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <canvas id="pdfCanvas"></canvas>
+    </div>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="Js/script.js"></script>
+
+    <script>
+        function toggleView(button) {
+            var frame = button.parentElement.parentElement;
+            var pdfView = frame.querySelector('iframe');
+            var textView = frame.querySelector('.text-view');
+
+            if (pdfView.classList.contains('active')) {
+                pdfView.classList.remove('active');
+                textView.classList.add('active');
+            } else {
+                textView.classList.remove('active');
+                pdfView.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
 </body>
 </html>
