@@ -300,4 +300,18 @@ header ul li a {
     gap: 20px;
     height: fit-content;
 }
+/* Media query para telas menores */
+@media only screen and (max-width: 768px) {
+    .profile-img {
+        width: 200px; /* Ajuste o tamanho da imagem de perfil para telas menores */
+        height: 200px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* Um único column para dispositivos móveis */
+    }
+    .pdf-frame,
+    .text-view {
+        height: auto; /* Ajuste a altura dos PDF frames e text views conforme necessário */
+    }
+}
 
