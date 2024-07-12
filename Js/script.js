@@ -109,47 +109,18 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        function filterProject(projectTitle) {
+        function filterProjects() {
+            const select = document.getElementById('keywordFilter');
+            const selectedKeyword = select.value.toLowerCase();
             const projectCards = document.querySelectorAll('.project-card');
-            
+
             projectCards.forEach(card => {
-                const title = card.querySelector('h2');
-                if (title === projectTitle) {
+                const keywords = card.dataset.keywords.toLowerCase();
+                if (selectedKeyword === 'all' || keywords.includes(selectedKeyword)) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
                 }
             });
         }
- // Função para filtrar apenas o projeto selecionado
-function filterProject(button) {
-    const projectCard = button.closest('.project-card');
-    const keyword = projectCard.getAttribute('data-keywords').toLowerCase();
-    
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        const keywords = card.getAttribute('data-keywords').toLowerCase();
-        if (card === projectCard) {
-            card.style.display = 'block';
-        } else {
-            card.style.display = 'none';
-        }
-    });
 
-    // Mostra o botão para reverter o filtro
-    const revertButton = document.getElementById('revertFilter');
-    revertButton.style.display = 'block';
-}
-
-// Função para reverter o filtro e mostrar todos os projetos
-function revertFilter() {
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        card.style.display = 'block';
-    });
-
-    // Esconde o botão de reverter filtro
-    const revertButton = document.getElementById('revertFilter');
-    revertButton.style.display = 'none';
-}
-       
