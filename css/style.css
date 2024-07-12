@@ -300,18 +300,21 @@ header ul li a {
     gap: 20px;
     height: fit-content;
 }
-/* Media query para telas menores */
+/* Media queries para dispositivos móveis */
 @media only screen and (max-width: 768px) {
-    .profile-img {
-        width: 200px; /* Ajuste o tamanho da imagem de perfil para telas menores */
-        height: 200px;
+    .profile .profile-img {
+        width: 150px;
+        height: 150px;
     }
+
     .project-card {
-        height: auto; /* Permita que as cartas de projeto se ajustem em altura */
+        padding: 15px;
     }
-    .pdf-frame,
-    .text-view {
-        height: auto; /* Ajuste a altura dos frames PDF e text views conforme necessário */
+
+    .project-card h2 {
+        font-size: 18px;
+    }
+}
     }
 }
 
