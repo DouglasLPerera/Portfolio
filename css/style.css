@@ -301,20 +301,4 @@ header ul li a {
     height: fit-content;
 }
 /* Media queries para dispositivos móveis */
-@media only screen and (max-width: 768px) {
-    .profile .profile-img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .project-card {
-        padding: 15px;
-    }
-
-    .project-card h2 {
-        font-size: 18px;
-    }
-}
-    }
-}
-
+@media only screen and (max-width: 500px)
