@@ -306,12 +306,12 @@ header ul li a {
         width: 200px; /* Ajuste o tamanho da imagem de perfil para telas menores */
         height: 200px;
     }
-    .project-grid {
-        grid-template-columns: 1fr; /* Um único column para dispositivos móveis */
+    .project-card {
+        height: auto; /* Permita que as cartas de projeto se ajustem em altura */
     }
     .pdf-frame,
     .text-view {
-        height: auto; /* Ajuste a altura dos PDF frames e text views conforme necessário */
+        height: auto; /* Ajuste a altura dos frames PDF e text views conforme necessário */
     }
 }
 
