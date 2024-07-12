@@ -300,5 +300,24 @@ header ul li a {
     gap: 20px;
     height: fit-content;
 }
-/* Media queries para dispositivos móveis */
-@media only screen and (max-width: 500px)
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Uma coluna para dispositivos menores */
+    }
+    .project-card {
+        height: auto; /* Altura automática para ajuste de conteúdo */
+    }
+    .pdf-frame {
+        height: 300px; /* Ajuste de altura menor para dispositivos móveis */
+    }
+    .pdf-frame iframe,
+    .text-view {
+        height: 300px; /* Ajuste de altura para o conteúdo do PDF/texto */
+    }
+    .nav-arrows {
+        display: flex; /* Garante que as setas de navegação sejam visíveis */
+    }
+    .nav-arrows button {
+        display: inline-block; /* Ajusta a exibição das setas para inline */
+    }
+}
